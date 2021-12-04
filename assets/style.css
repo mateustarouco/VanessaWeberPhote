@@ -5,6 +5,7 @@
 }
 
 body {
+  overflow: paged-y;
   background: #212121;
 }
 
@@ -123,13 +124,13 @@ header .container .row .text-left {
 
 /*--------------------------------------------------------------------------*/
 .portfolio {
-  width: 100vw;
+  max-width: 99vw;
   height: 100vh;
 }
 .portfolio .container {
-  max-width: 100vw;
-  width: 100vw !important;
+  max-width: none;
   height: 100%;
+  width: 100%;
 }
 .portfolio .container .row {
   height: 50%;
@@ -161,6 +162,29 @@ header .container .row .text-left {
 .contact .container .row {
   height: 100%;
 }
+.contact .container .row .form {
+  padding: 20px;
+  border-radius: 5px;
+  background: #313131 !important;
+}
+.contact .container .row .form h2 {
+  text-align: center;
+  color: #d1d1d1;
+}
+.contact .container .row .form .input-group > input {
+  background: #525252;
+  color: #d1d1d1;
+  border: 1px solid #212121;
+}
+.contact .container .row .form .btn {
+  width: 100%;
+  color: #d1d1d1;
+  background: #212121 !important;
+}
+.contact .container .row .form label {
+  color: rgba(209, 209, 209, 0.68);
+}
+
 /*---------------------------------------------------*/
 footer {
   height: 30vh;
@@ -246,8 +270,46 @@ footer:before {
     margin-bottom: 5px;
     transition: 0.3s;
   }
-  #menu-mobile .button #bar-3 {
+  #menu-mobile .button .bar-1 {
+    height: 5px;
+    width: 40px;
+    background: #d1d1d1;
+    margin-bottom: 5px;
+    transition: 0.3s;
+  }
+  #menu-mobile .button .bar-2 {
+    height: 5px;
+    width: 40px;
+    background: #d1d1d1;
+    margin-bottom: 5px;
+    transition: 0.3s;
+  }
+  #menu-mobile .button .bar-3 {
+    height: 5px;
+    background: #d1d1d1;
+    margin-bottom: 5px;
+    transition: 0.3s;
     width: 25px;
+  }
+  #menu-mobile .button .bar-1-1 {
+    height: 5px;
+    width: 40px;
+    transform: rotate(45deg) translate3d(7px, 7px, 0);
+    background: red;
+    margin-bottom: 5px;
+    transition: 0.3s;
+  }
+  #menu-mobile .button .bar-2-1 {
+    opacity: 0;
+    transition: 0.3s;
+  }
+  #menu-mobile .button .bar-3-1 {
+    height: 5px;
+    background: #d1d1d1;
+    transform: rotate(-45deg);
+    margin-bottom: 5px;
+    transition: 0.3s;
+    width: 40px;
   }
 }
 @keyframes menu {}

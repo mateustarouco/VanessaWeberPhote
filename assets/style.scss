@@ -148,10 +148,12 @@ header {
 
 /*--------------------------------------------------------------------------*/
 .portfolio {
-  max-width: 80vw;
+  max-width: 99vw;
   height: 100vh;
 
   .container {
+    max-width: none;
+      height: 100%;
       width: 100%;
     .row {
       height: 50%;
@@ -187,8 +189,28 @@ header {
     .row {
       height: 100%;
 
-      .col {
+      .form {
+        padding: 20px;
+        border-radius: 5px;
+        background: #313131 !important;
+        h2{
+          text-align: center;
+          color: #d1d1d1;
+        }
+        .input-group > input{
+          background: #525252;
+          color: #d1d1d1;
+          border: 1px solid #212121;
+        }
 
+        .btn{
+          width: 100%;
+          color: #d1d1d1;
+          background: #212121!important;
+        }
+        label{
+          color: rgba(209, 209, 209, 0.68);
+        }
       }
     }
   }
@@ -282,15 +304,46 @@ footer:before {
         margin-bottom: 5px;
         transition: .3s;
       }
-      #bar-1{
+      .bar-1{
+        height: 5px;
+        width: 40px;
+        background: #d1d1d1;
+        margin-bottom: 5px;
+        transition: .3s;
       }
-      #bar-2{
+      .bar-2{
+        height: 5px;
+        width: 40px;
+        background: #d1d1d1;
+        margin-bottom: 5px;
+        transition: .3s;
       }
-      #bar-3{
+      .bar-3{
+        height: 5px;
+        background: #d1d1d1;
+        margin-bottom: 5px;
+        transition: .3s;
         width: 25px;
       }
-      .bar-open{
-
+      .bar-1-1{
+        height: 5px;
+        width: 40px;
+        transform: rotate(45deg) translate3d(7px,7px,0);
+        background: red;
+        margin-bottom: 5px;
+        transition: .3s;
+      }
+      .bar-2-1{
+        opacity: 0;
+        transition: .3s;
+      }
+      .bar-3-1{
+        height: 5px;
+        background: #d1d1d1;
+        transform: rotate(-45deg);
+        margin-bottom: 5px;
+        transition: .3s;
+        width: 40px;
       }
     }
   }
