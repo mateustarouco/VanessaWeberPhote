@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Gwendolyn:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #212121;
+}
+
+.font {
+  font-family: "Gwendolyn", cursive;
+}
+
+.img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #525252;
+  stroke: #d1d1d1;
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+#menu-mobile {
+  display: none;
+}
+
+menu {
+  z-index: 999;
+  width: 100vw;
+  background: #212121;
+  background: linear-gradient(180deg, #212121 0%, rgba(255, 255, 255, 0) 100%);
+  position: fixed;
+  top: -1;
+  right: 0;
+  color: #d1d1d1 !important;
+}
+menu .container .row .col {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+menu .container .row .col ul {
+  list-style: none;
+  display: flex;
+}
+menu .container .row .col li {
+  cursor: pointer;
+  margin: 0.5rem;
+  padding: 0.2rem;
+}
+menu .container .row .col li a {
+  text-decoration: none;
+  color: #d1d1d1;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+header {
+  height: 100vh;
+  width: 100vw;
+  color: #d1d1d1;
+  background-size: cover;
+  background-position: bottom;
+  background-image: url("img/header.jpg");
+  background-attachment: fixed;
+}
+header .container {
+  height: 100%;
+}
+header .container .row {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .container .row .text-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/*--------------------------------------------------------------------------*/
+.about {
+  padding: 25px;
+  color: #d1d1d1;
+}
+.about .container {
+  height: 100%;
+}
+.about .container .row {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about .container .row #perfil {
+  background: url("img/perfil.jpg");
+  background-size: cover;
+}
+.about .container .row .icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 3.5rem;
+}
+.about .container .row .icons .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+}
+.about .container .row .icons .icon a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #d1d1d1;
+  transition: 0.3s;
+}
+.about .container .row .icons .icon a:hover {
+  font-size: 3rem;
+  transition: 0.3s;
+}
+
+/*--------------------------------------------------------------------------*/
+.portfolio {
+  width: 100vw;
+  height: 100vh;
+}
+.portfolio .container {
+  max-width: 100vw;
+  width: 100vw !important;
+  height: 100%;
+}
+.portfolio .container .row {
+  height: 50%;
+}
+.portfolio .container .row .col-3 {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.4s;
+}
+.portfolio .container .row .col-3:hover {
+  transition: 0.4s;
+  transform: scale(1.1);
+  border-radius: 5px;
+  z-index: 50 !important;
+}
+
+.contact {
+  height: 70vh;
+}
+.contact .container {
+  height: 100%;
+}
+.contact .container .row {
+  height: 100%;
+}
+/*---------------------------------------------------*/
+footer {
+  height: 30vh;
+  background: #030303;
+  background: linear-gradient(54deg, #030303 0%, #212121 100%);
+}
+footer .container {
+  height: 100%;
+}
+footer .container .row {
+  height: 100%;
+}
+
+footer:before {
+  content: "";
+  background: #151515;
+  height: 20px;
+  width: 100%;
+  display: block;
+  position: absolute;
+  border-bottom: 7px solid #212121;
+}
+
+/*--------------------------------------------*/
+#img-1 {
+  background-image: url("img/1.jpg");
+}
+
+#img-2 {
+  background-image: url("img/2.jpg");
+}
+
+#img-3 {
+  background-image: url("img/3.jpg");
+}
+
+#img-4 {
+  background-image: url("img/4.jpg");
+}
+
+#img-5 {
+  background-image: url("img/5.jpg");
+}
+
+#img-6 {
+  background-image: url("img/6.jpg");
+}
+
+#img-7 {
+  background-image: url("img/7.jpg");
+}
+
+#img-8 {
+  background-image: url("img/8.jpg");
+}
+
+/*---------------------------------------------------*/
+@media (max-width: 600px) {
+  menu {
+    display: none;
+  }
+
+  #menu-mobile {
+    display: block;
+    z-index: 999;
+    width: 100vw;
+    background: #212121;
+    background: linear-gradient(180deg, #212121 0%, rgba(255, 255, 255, 0) 100%);
+    position: fixed;
+    top: -1;
+    right: 0;
+    color: #d1d1d1 !important;
+  }
+  #menu-mobile .button {
+    width: 40px;
+    padding: 10px !important;
+    margin: 5px !important;
+  }
+  #menu-mobile .button .bar {
+    height: 5px;
+    width: 40px;
+    background: #d1d1d1;
+    margin-bottom: 5px;
+    transition: 0.3s;
+  }
+  #menu-mobile .button #bar-3 {
+    width: 25px;
+  }
+}
+@keyframes menu {}
+
+/*# sourceMappingURL=style.css.map */
