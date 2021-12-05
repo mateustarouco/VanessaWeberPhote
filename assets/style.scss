@@ -328,26 +328,62 @@ footer:before {
       .bar-1-1{
         height: 5px;
         width: 40px;
-        transform: rotate(45deg) translate3d(7px,7px,0);
-        background: red;
+        transform: rotate(225deg) translate3d(-7px,-6px,0);
+        background: rgba(209, 209, 209, 0.92);
         margin-bottom: 5px;
-        transition: .3s;
+        transition: .6s;
       }
       .bar-2-1{
-        opacity: 0;
-        transition: .3s;
+        width: 0px;
+        transition: .4s;
       }
       .bar-3-1{
         height: 5px;
         background: #d1d1d1;
-        transform: rotate(-45deg);
+        transform: rotate(-225deg);
         margin-bottom: 5px;
-        transition: .3s;
+        transition: .5s;
         width: 40px;
       }
     }
+      .menu-open{
+        transition: .5s;
+        background-color: #212121;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        ul{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          list-style: none;
+          flex-direction: column;
+          li{
+            margin: 5%;
+            a{
+            text-decoration: none;
+              color: #d1d1d1;
+              font-size: 2.5rem;
+            }
+          }
+        }
+      }
+  }
+.hiden{
+  overflow: hidden;
+}
+  .none{
+    display: none;
+    transition: .5s;
+
+  }
+  .bg-bk{
+    background-color: #212121!important;
   }
 }
+
+
 
 @keyframes menu {
   0%{
